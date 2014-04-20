@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+<div id="lesson_material"><h2>Residency Lesson Material</h2></div>
+
+{% for week in weeks %}
+	<div class="week">Week {{week.number}} : {{week.title}}
+	<ul>
+		{% for lesson in lessons %}
+			{% if lesson.week==week.number %}
+			<li>Day {{lesson.day}} - {{lesson.title}}</li>
+			{% endif %}
+		{% endfor %}
+	</ul>
+	</div>
+{% endfor %}
+
+<div id="badges"><h2>Badges</h2></div>
+{% for badge in badges %}
+<p>{{badge.category}} {{badge.number}}: {{badge.name}}</p>
+{% endfor %}
+
+<div id="code_samples"><h2>Code You Can Use</h2></div>
+{% for sample in code_samples %}
+<p>{{sample.name}} ({{sample.language}}) - {{sample.developer.firstname}} {{sample.developer.lastname}}</p>
+{% endfor %}
+
+{% endblock %}
