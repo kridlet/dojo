@@ -1,11 +1,21 @@
+<!doctype html>
 <html>
-	<head>
-	<title> Dojo - Code for Progress </title>
-	</head>
+        <head>
+                <title>Dojo - Code for Progress</title>
+                <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+        </head>
 
-	
 	<body>
-		<div><h1>the Dojo</h1></div>
+
+        <div id="banner">
+                <a href="{{ url_for('index') }}"><div class="navbutton">Dojo home</div></a>
+        </div>
+
+        <div id="header">
+                <img src="../static/CFPlogo.jpg">
+                <div id="triangle"><div class="arrow-down"></div></div>
+        </div>
+
 	
 	<div id="main_content">
 	{% block content %}{% endblock %}

@@ -1,7 +1,8 @@
 {% extends "base.html" %}
 {% block content %}
 
-<div id="lesson_material"><h2>Residency Lesson Material</h2></div>
+<h1> Welcome to the Dojo</h1>
+<br><div id="lesson_material"><h2>Residency Lesson Material</h2></div>
 {% for week in weeks %}
 	<div class="week">Week {{week.number}} : {{week.title}}
 	<ul>
@@ -14,7 +15,7 @@
 	</div>
 {% endfor %}
 
-
+<br>
 <div id="achievements"><h2>Achievements</h2>
 <ul>
 {% for achievement in achievements %}
@@ -23,6 +24,7 @@
 </ul>
 </div>
 
+<br>
 <div id="code_samples"><h2>Code You Can Use</h2>
 <ul>
 {% for sample in code_samples %}

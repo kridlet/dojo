@@ -1,0 +1,78 @@
+body				{	font: normal 16px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+						padding-bottom: 200px;}
+a					{	text-decoration: none; color: #AFBF45}
+
+ul					{ 	list-style-type: square; color: #AFBF45;}
+ul li				{	margin-bottom: 10px;}
+ul span				{	color: #696969 }
+
+#main_content 			{   margin: 0 auto; width: 960px; }
+
+
+#header 			{	margin-left: auto; margin-right: auto; margin-top: 60px; width: 800px;}
+
+
+#triangle  			{	margin-top: 30px;border-top: solid #EDEDED 3px}
+.arrow-down 		{	margin-left: auto; margin-right: auto; width: 0; height: 0; border-left: 35px solid white; border-right: 35px solid white; border-top: 15px solid #EDEDED;}
+
+
+#banner 			{	position:fixed; top:0; width:100%; padding: 0; z-index:100; height: 40px; background: #F8F8F8; color: black;	}
+.navbutton			{ 	float: right;	margin-right: 10px;	height: 40px; padding: 10px; color: #696969;}
+.navbutton:hover 	{	background-color: white; color: #AFBF45;}
+
+
+.contentholder		{	color: #696969;}
+.contentholder h2	{	font: normal 24px "Lucida Console", "Lucida Sans Typewriter", Monaco, "Bitstream Vera Sans Mono", monospace;
+						text-align: center; margin-bottom: 30px; margin-top: 10px; color: black;}
+						
+						
+.formheader			{	text-align: center;}
+.formheader p 		{ 	margin-bottom: 1em; }
+.formheader h2		{	font-size: 28px; margin-bottom: 30px; margin-top: 10px; color: #AFBF45;}
+.formheader h3		{	font: normal 22px "Lucida Console", "Lucida Sans Typewriter", Monaco, "Bitstream Vera Sans Mono", monospace;
+						text-align: left; margin-bottom: 20px; margin-top: 50px; color: #AFBF45;}				
+
+
+.advance			{   float: right; text-align: left;
+						height: 70px; width: 280px; border: 1px solid #AFBF45; color: #686868;
+						box-shadow:0 0 1px #AFBF45;-moz-box-shadow:0 0 1px #AFBF45;-webkit-box-shadow:0 0 1px #AFBF45;}
+.advance h2			{	color: #696969;	display:block; font-size: 36px; font-weight: 800; margin: 0px;}
+.advance p			{	display: block; margin: 0px;}
+
+
+#navbuttonholder	{	text-align: center;}
+#previousarrow, #nextarrow, #editbutton	{display: inline-block; border: 1px solid #AFBF45; color: #686868; text-align: center; box-shadow:0 0 1px #AFBF45;-moz-box-shadow:0 0 1px #AFBF45;-webkit-box-shadow:0 0 1px #AFBF45;}
+#previousarrow			{   float: left; margin-left: 10px}
+#nextarrow				{   float: right; margin-right: 10px}
+#editbutton				{   margin-left: -23px;}
+#previousarrow:hover, #nextarrow:hover, #editbutton:hover	{ color: #AFBF45}
+
+
+button:hover		{	background: white	}
+button:hover		{   background: #686868; color: #AFBF45}
+button:hover h2		{   background: #686868; color: #AFBF45}
+
+.chaptertitle 		{   font-weight: bold; color: #686868}
+.chaptertitle:hover {   color:#AFBF45}
+.sectiontitle		{	font-weight: bold; color: #AFBF45}
+
+.time				{	margin-left: 50px; font-weight: bold;	width: 200px; display: inline-block;}
+.activity			{	display: inline-block; width: 700px; vertical-align: top;}
+
+input[type="text"], textarea	{	font-size: 18px; width: 800px; border: dashed 2px #AFBF45; margin-left: 10px; padding: 2px; padding: 10px;}
+textarea	{	font-size: 18px; height: 100px; vertical-align: top;}
+#title input		{	font-size: 28px; color: #AFBF45; width: 800px;}
+.subtitle input		{ width: 300px;}
+#scheduleitem textarea, #scheduleitem input	{width: 590px; margin-bottom: 5px; background: #EDEFDE;}
+#scheduleitem textarea	{font-style: italic; font-weight: 100; background: white;}
+.time input			{	width: 150px; text-align: center;}
+#instructorbox		{	margin-left: 16px;	}
+
+.lessonheader		{text-align: center;}
+
+
+#loginbox			{	text-align: center; font-size: 20px; margin-top: 50px;}
+#loginbox label		{   font-weight: bold; color: #686868;}
+#loginbox input		{	border: 0px; text-align: left; width: 400px; height:40px; margin-left: 20px; padding: 0px 0px 0px 10px; background: #F6F6F6; font-size: 18px;}
+#loginbox button	{	border: 0px; margin: 50px 5px 20px 5px; width: 290px; height: 45px; text-align: center; font-weight: bold; font-size: 22px; color: white; background: #afbf45}
+#password			{margin-left: -41px;}
