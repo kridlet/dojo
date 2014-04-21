@@ -10,5 +10,6 @@
 
 (6) As a Code for Progress staff member, I want to quickly and easily place lesson material and new badge graphics online for users to see, so that I can minimize the number of emails I send and expand access to the material I create.
 
+(7) This is going to be a user story about editing external links.
 
 
