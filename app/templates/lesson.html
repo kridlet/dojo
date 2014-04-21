@@ -2,19 +2,29 @@
 {% block content %}
 
 <h2>Week {{lesson.week}}, Day {{lesson.day}} - {{lesson.title}}</h2>
+<br>
 <p><h3>Slides</h3>
 <ul>
-<li> Slide links go here </li>
+{% if lesson.prezi1 %}<li><a href="{{lesson.prezi1}}">View and comment on slide set 1</a></li>{% else %}<li>None for this lesson</li>{% endif %}
+{% if lesson.prezi2 %}<li><a href="{{lesson.prezi2}}">View and comment on slide set 2</a></li>{% endif %}
+{% if lesson.prezi3 %}<li><a href="{{lesson.prezi3}}">View and comment on slide set 3</a></li>{% endif %}
 </ul></p>
 
+<br>
 <p><h3>Supplemental documents</h3>
 <ul>
-<li> Additional documents, like PDP template, Midwest Academy strategy chart, go here </li>
+{% if lesson.supplemental1 %}<li><a href="{{lesson.supplemental1}}">Download the first set of supplemental materials</a></li>{% else %}<li>None for this lesson</li>{% endif %}
+{% if lesson.supplemental2 %}<li><a href="{{lesson.supplemental2}}">Download the second set of supplemental materials </a></li>{% endif %}
+{% if lesson.supplemental3 %}<li><a href="{{lesson.supplemental3}}">Download the third set of supplemental materials </a></li>{% endif %}
 </ul></p>
 
+
+<br>
 <p><h3>External links for more reading and practice</h3>
 <ul>
-<li> Links to external resources (things Adam was going to look up) go here </li>
+{% if lesson.supplemental1 %}<li><a href="{{lesson.external_link1}}">More reading</a></li>{% else %}<li>None for this lesson</li>{% endif %}
+{% if lesson.supplemental2 %}<li><a href="{{lesson.external_link2}}">More reading </a></li>{% endif %}
+{% if lesson.supplemental3 %}<li><a href="{{lesson.external_link3}}">Even more reading </a></li>{% endif %}
 </ul></p>
 
 {% endblock %}
