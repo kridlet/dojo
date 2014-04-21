@@ -15,6 +15,16 @@ class Lesson(db.Model):
 	external_link2 = db.Column(db.String(140))
 	external_link3 = db.Column(db.String(140))
 	notes = db.Column(db.Text)
+	prezi1_title = db.Column(db.String(140))
+	prezi2_title = db.Column(db.String(140))
+	prezi3_title = db.Column(db.String(140))
+	supplemental1_title = db.Column(db.String(140))
+	supplemental2_title = db.Column(db.String(140))
+	supplemental3_title = db.Column(db.String(140))
+	external_link1_title = db.Column(db.String(140))
+	external_link2_title = db.Column(db.String(140))
+	external_link3_title = db.Column(db.String(140))
+
 
 	def __repr__(self):
 		return '<Lesson %r>' % (self.id)
