@@ -1,0 +1,116 @@
+{% extends "base.html" %}
+{% block content %}
+
+<p><h2>Achievements</h2></p>
+
+<br>
+<div id="achievements_category"><h3>BASH</h3>
+<ul>
+{% for achievement in achievements %}
+	{% if achievement.category=='BASH' %}
+	<li>{{achievement.name}} ({{achievement.category}} {{achievement.number}}) - {{achievement.description}}
+	</li>{%endif %}
+{% endfor %}
+</ul>
+</div>
+
+<br>
+<div id="achievements_category"><h3>Python</h3>
+<ul>
+{% for achievement in achievements %}
+	{% if achievement.category=='Python' %}
+	<li> {{achievement.name}} ({{achievement.category}} {{achievement.number}}) - {{achievement.description}} 
+	</li>{%endif %}
+{% endfor %}
+</ul>
+</div>
+
+<br>
+<div id="achievements_category"><h3>HTML</h3>
+<ul>
+{% for achievement in achievements %}
+	{% if achievement.category=='HTML' %}
+	<li> {{achievement.name}} ({{achievement.category}} {{achievement.number}}) - {{achievement.description}} 
+	</li>{%endif %}
+{% endfor %}
+</ul>
+</div>
+
+<br>
+<div id="achievements_category"><h3>CSS</h3>
+<ul>
+{% for achievement in achievements %}
+	{% if achievement.category=='CSS' %}
+	<li> {{achievement.name}} ({{achievement.category}} {{achievement.number}}) - {{achievement.description}} 
+	</li>{%endif %}
+{% endfor %}
+</ul>
+</div>
+
+<br>
+<div id="achievements_category"><h3>JavaScript</h3>
+<ul>
+{% for achievement in achievements %}
+	{% if achievement.category=='JavaScript' %}
+	<li>{{achievement.name}} ({{achievement.category}} {{achievement.number}}) - {{achievement.description}}
+	</li>{%endif %}
+{% endfor %}
+</ul>
+</div>
+
+<br>
+<div id="achievements_category"><h3>SQL</h3>
+<ul>
+{% for achievement in achievements %}
+	{% if achievement.category=='SQL' %}
+	<li> {{achievement.name}} ({{achievement.category}} {{achievement.number}}) - {{achievement.description}} 
+	</li>{%endif %}
+{% endfor %}
+</ul>
+</div>
+
+<br>
+<div id="achievements_category"><h3>Flask</h3>
+<ul>
+{% for achievement in achievements %}
+	{% if achievement.category=='Flask' %}
+	<li> {{achievement.name}} ({{achievement.category}} {{achievement.number}}) - {{achievement.description}} 
+	</li>{%endif %}
+{% endfor %}
+</ul>
+</div>
+
+<br>
+<div id="achievements_category"><h3>Django</h3>
+<ul>
+{% for achievement in achievements %}
+	{% if achievement.category=='Django' %}
+	<li> {{achievement.name}} ({{achievement.category}} {{achievement.number}}) - {{achievement.description}} 
+	</li>{%endif %}
+{% endfor %}
+</ul>
+</div>
+
+<br>
+<div id="achievements_category"><h3>Human-Centered Design</h3>
+<ul>
+{% for achievement in achievements %}
+	{% if achievement.category=='Design' %}
+	<li> {{achievement.name}} ({{achievement.category}} {{achievement.number}}) - {{achievement.description}} 
+	</li>{%endif %}
+{% endfor %}
+</ul>
+</div>
+
+<br>
+<div id="achievements_category"><h3>The Social Justice Movement</h3>
+<ul>
+{% for achievement in achievements %}
+	{% if achievement.category=='Movement' %}
+	<li> {{achievement.name}} ({{achievement.category}} {{achievement.number}}) - {{achievement.description}} 
+	</li>{%endif %}
+{% endfor %}
+</ul>
+</div>
+
+{% endblock %}

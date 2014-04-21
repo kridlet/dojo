@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2>{{code_sample.name}}, ({{code_sample.language}})</h2>
+<h3>Developer: {{code_sample.developer_first}} {{code_sample.developer_last}}</h3>
+<br><br>
+<p>
+<h3>Where is it?</h3>
+<p><a href = 'http://dojo.codeforprogress.org/static/{{code_sample.filename}}'>Right-click here to download {{code_sample.filename}}</a>.</p>
+</p>
+
+<br>
+<p>
+<h3>What is it?</h3>
+<p>{{code_sample.description}}</p>
+</p>
+
+<br>
+<p>
+<h3>Docs: How do I use it?</h3>
+<p>{{code_sample.docs}}</p>
+</p>
+
+{% endblock %}

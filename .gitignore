@@ -1,0 +1,4 @@
+*.pyc
+config.py
+devconfig.py
+
